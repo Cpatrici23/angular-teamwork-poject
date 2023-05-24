@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    flex-wrap: wrap;
+  }
+  
+  .card{
+    border: 1px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    margin: 15px;
+    padding: 8px;
+    width: 320px;
+    height: 400px;
+  }
+  .card:hover {
+    border-right: 1px solid black;
+    border-bottom:1px solid bottom;
+    border-left: 3px solid black;
+    border-top:3px solid black
+  }
+  
+  .card img {
+     width: 300px;
+     margin:0 auto;
+     height:250px;
+  }

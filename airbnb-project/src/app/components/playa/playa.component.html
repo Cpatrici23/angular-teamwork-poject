@@ -1,1 +1,21 @@
-<p>playa works!</p>
+<div class="container">
+    <div *ngFor="let vivienda of viviendas" class="card">
+    
+     <p *ngIf="vivienda.isAvailable">
+        disponible
+      </p>
+      <p *ngIf="!vivienda.isAvailable">
+       reservado
+      </p>
+    
+    
+    
+    
+    
+      <img [src]="vivienda.img" alt="">
+      <div>
+    
+        <p>{{vivienda.id}}</p>
+       <h3>{{vivienda.title}}</h3>
+      </div>
+    </div>
